@@ -1,0 +1,76 @@
+<h1 align="center">
+  <br>
+  <a href="http://atlasos.net"><img src="https://i.imgur.com/xV08gIt.png" alt="Atlas" width="900"></a>
+</h1>
+<h4 align="center">Szabadsággal teli Windows operációs rendszer, amelyet a teljesítmény és a késleltetés optimalizálására terveztek.</h4>
+
+<p align="center">
+  <a href="https://github.com/Atlas-OS/Atlas/wiki/2.-Installing">Telepítés</a>
+  •
+  <a href="https://github.com/Atlas-OS/Atlas/wiki/1.-FAQ#contents">FAQ</a>
+  •
+  <a href="https://discord.com/servers/atlas-795710270000332800" target="_blank">Discord</a>
+  •
+  <a href="https://forum.atlasos.net">Fórum</a>
+</p>
+
+# 'A pokol az Atlas?
+
+Mondjunk valamit erről itt, Atlasban. Ez a díszes Microsoft Windows 10 módosított változata. Most pedig mi a baj a jó Windows 10-zel? Nos, hadd mondjam el, van néhány hátránya, amelyek lelassítják a játék teljesítményét. Ezért hagytuk abba az Atlaszt, és mindannyian egyenlő esélyeket adunk nekik az alsókategóriás és a nagy teljesítményű játékosoknak egyaránt.
+
+Mi egy átlátható és nyílt forráskódú projekt vagyunk, szóval tudod, hogy nem titkolunk el semmit előled. Visszakaptuk magunkat a rendszerkésés, a hálózati késleltetés, a bemeneti késés csökkentése és a rendszer privát megőrzése terén is. Mindannyian a teljesítményről szólunk, ez a fő szempontunk itt.
+
+## Tartalomjegyzék
+
+- [FAQ](https://github.com/Atlas-OS/Atlas/wiki/1.-FAQ)
+  - [What is the Atlas project?](https://github.com/Atlas-OS/Atlas/wiki/1.-FAQ#11-what-is-the-atlas-project)
+  - [How do I install Atlas?](https://github.com/Atlas-OS/Atlas/wiki/1.-FAQ#12-how-do-i-install-atlas-os)
+  - [What is removed in Atlas?](https://github.com/Atlas-OS/Atlas/wiki/1.-FAQ#13-whats-removed-in-atlas-os)
+- <a href="#windows-vs-atlas">Windows vs. Atlas</a>
+- [Post Install](https://github.com/Atlas-OS/Atlas/wiki/3.-Post-Install)
+- [Brandin' kit](https://raw.githubusercontent.com/Atlas-OS/Atlas/main/img/brand-kit.zip)
+
+## Windows kontra Atlas
+
+### **Magán**
+
+De hadd mondjam el, az Atlasszal a számítógépe olyan privát, mint egy mókus ősszel rakott makkja. Nincs többé Big Brother, aki a vállad fölött vigyáz, nosiree.
+
+### **Shore up Security**
+
+Az Atlas célja a biztonság megőrzése, miközben a teljesítmény a csúcson marad. Elmentünk, és kikapcsoltuk az összes olyan funkciót, amely információszivároghat, vagy kihasználható. Most lehet, hogy van néhány kivétel, például a Spectre és a Meltdown üzlet, de letiltottuk ezeket a csökkentéseket a jobb teljesítmény érdekében. Ha egy biztonsági intézkedés lelassítja a rendszert, akkor nekünk sincs semmi. Tehát itt van egy összefoglaló arról, hogy mit változtattunk, és egy kis (P)-t tettünk azok mellé, amelyek biztonsági kockázatot jelentettek, de jól kijavítottuk őket:
+- [Spectre](https://spectreattack.com/spectre.pdf)
+- [Meltdown](https://meltdownattack.com/meltdown.pdf)
+- [DMA Remapping](https://docs.microsoft.com/en-us/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)
+- [(P) ATMFD Exploit](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2020-1020)
+- [(P) Print Nightmare](https://us-cert.cisa.gov/ncas/current-activity/2021/06/30/printnightmare-critical-windows-print-spooler-vulnerability)
+- [Remote Desktop](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=Windows+Remote+Desktop)
+- [NetBIOS](https://en.wikipedia.org/wiki/NetBIOS) (_Possible Information Retrieval_)
+
+### **Elpusztult és rohamosan indul!**
+
+Az Atlas lecsupaszítva és készen áll a ringatásra! Elmentünk, és eltávolítottuk az összes előre telepített alkalmazást és doo-dads-t, ami lassította. Ez okozhat némi akadozást a kompatibilitásban, de ez egy csekély ár azért a tiszta szerencsejáték-teljesítményért, amit ki fogsz kapni ebből a berendezésből. Elkészítettük a Windows Defendert és az összes különleges biztonsági funkciót is, mert hiszünk abban, hogy a munkát megfelelően és gyorsan kell elvégezni. Nincs idő a lassú bökkenő szoftverekre! De ne aggódjon, a legtöbb munkahelyi és iskolai alkalmazás továbbra is álomszerűen fut. Látogasson el a GYIK-re, és nézze meg, mit csináltunk még, és mit tettünk ki!
+
+### **Teljesítő**
+
+Jobb, ha azt hiszi, hogy az Atlas a Windows legteljesítményesebb verziója, amelyre valaha is figyelni fog! Ebben rohadtul megbizonyosodtunk. Megvettük a régi Windowst, és adtunk neki egy megfelelő hangolást, finomhangolást és finomhangolást a rohadt dologban. Az energiaellátási sémától a rendszerindítási konfigurációig nem hagytunk követendőt a maximális teljesítményre való törekvésünkben.
+
+- Személyre szabott energiasémát alakítottunk ki, amely úgy növeli a teljesítményt, mint egy hot rod
+- Elfogyasztottuk a szolgálatokat és a sofőröket, soványan és aljasan
+- Kikapcsolta az exkluzív hangot, játékai és filmjei jól fognak szólni
+- Húzza ki a konnektorból a szükségtelen eszközöket, egy vezetéket vagy kábelt ne legyen látható
+- Csökkentse az energiamegtakarítást, mindig teljes gőzzel előre
+- Megtörtént, letiltotta őket a teljesítményre éhes biztonsági intézkedésekről, így a játékai zökkenőmentesen futnak
+- Automatikusan engedélyezett MSI mód minden eszközön, most ez egy hot rod
+- A rendszerindítási konfiguráció optimalizálása, amely pillanatok alatt nulláról hatvanra visz minket
+- Optimalizált folyamatütemezés, játékai úgy futnak, mint az óramű
+
+## Brandin' kit
+
+Szeretne saját Atlas háttérképet létrehozni? Esetleg vacakol a logónkkal, hogy saját tervezést készítsen? A nyilvánosság számára hozzáférhetővé tettük, hogy új kreatív ötleteket ébresszünk a közösségben. [Nézze meg márkakészletünket, és készítsen valami látványosat.](https://github.com/Atlas-OS/Atlas/blob/main/img/brand-kit.zip?raw=true)
+
+Ezenkívül van egy [dedikált terület a viták lapon] (https://github.com/Atlas-OS/Atlas/discussions/categories/community-artwork), így megoszthatja alkotásait más kreatív zsenikkel, és talán még szikrát is megoszthat egy kis inspiráció!
+
+## Jogi nyilatkozat
+
+A képek bármelyikének letöltésével, módosításával vagy felhasználásával Ön elfogadja a [Microsoft feltételeit] (https://www.microsoft.com/en-us/Useterms/Retail/Windows/10/UseTerms_Retail_Windows_10_English.htm). A képek egyike sincs előre aktiválva, **eredeti kulcsot kell** használnia.
